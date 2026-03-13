@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lettre de Motivation</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="box">
-        <div>
-            Bonjour!
-            Hi my name is patrick marler. I am very pationate about 3D modeling
-            
-        </div>
-        <div>
-            <model-viewer src="models/tower.glb" camera-controls auto-rotate shadow-intensity="1"></model-viewer>
-        </div>
-        
+    <header>
+    <div class="logo">
+      <h3>Patrick Marler</h3>
     </div>
+    <nav>
+      <a href="https://stoicpuppy.github.io/Website/">Portfolio</a>
+    </nav>
+    <div>École NAD</div>
+  </header>
 
-    
+  <section class="display">
+    <h1>Cathedrale créé en 3D</h1>
+    <h2>J’ai toujours eu beaucoup de plaisir à expérimenter avec les logiciels 3D pour créer des objets et des niveaux pour les jeux que je fais. Je préfère créer quelque chose à ma façon que de trouver quelque chose qui pourrait faire la job en ligne. C’est probablement mon côté plus têtu qui parle que mon côté créatif mais bon.</h2>
+    <div class="gallery">
+      <figure>
+        <div>
+            <model-viewer src="models/tower.glb" camera-controls auto-rotate shadow-intensity="1" alt="Cathedral Model"></model-viewer>
+        </div>
+        <p>Voici</p>
+      </figure>
+      <figure>
+        <div>
+            <model-viewer src="models/tower.glb" camera-controls auto-rotate shadow-intensity="1" alt="Tower Model"></model-viewer>
+        </div>
+        <p>Voici une des tours de la cathédrale que j'ai créé.</p>
+      </figure>
+    </div>
+  </section>
 
-   
     <script src="code.js"></script>
 </body>
 </html>
