@@ -51,6 +51,14 @@ nav a:hover {
   margin-bottom: 1em;
 }
 
+.display h2{
+  font-size: 24px;
+}
+
+.bottom{
+  padding-top: 50px;
+}
+
 .gallery {
   display: flex;
   justify-content: space-between;
